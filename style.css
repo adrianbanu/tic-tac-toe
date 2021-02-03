@@ -1,0 +1,81 @@
+:root{
+  --cell-size: 100px;
+  --font-size: calc(var(--cell-size) * 0.9);
+}
+
+body{
+  background-color: lightslategrey;
+  font-family: 'Galindo', cursive;
+  background-color: #63494A;
+  background-image: url("images/untitled.png");
+  background-size: 4%;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.player-names{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#player2{
+  margin-left: 20px;
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Galindo', cursive;
+}
+
+#player1{
+  margin-right: 20px;
+  color: blue;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Galindo', cursive;
+}
+
+.xo-board{
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
+  column-gap: 5px;
+  row-gap: 5px;  
+}
+
+.cell{
+  width: var(--cell-size);
+  height: var(--cell-size);
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--font-size);
+  cursor:default;
+}
+
+#restart{
+  margin-top: 15px;
+  padding: 5px;
+  border-radius: 5px;
+  font-family: 'Galindo', cursive;
+  border-style: none;
+  outline: none;
+  cursor:pointer;
+  font-weight: bold;
+  font-size: 20px;
+  background-image: url("images/backtile.jpg");
+  color:#63494A;
+}
+
+#restart:hover{
+  color: black;
+}
+
+#game-winner{
+  font-size: 24px;
+  cursor:default;
+}
